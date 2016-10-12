@@ -1,0 +1,21 @@
+__author__ = "BrianAguirre"
+
+#IMPORTS MODULES
+import utilities
+
+#REMOVE MODULE SPECIFICATION:
+#from utilities import remove_dupes  --- Imports the specific method
+
+def brian_better_than_max():
+    return "Brian > Max"
+
+print (brian_better_than_max())
+
+if __name__ == "__main__":
+    assert [1,2,3] == utilities.remove_dupes([1,2,2,3]) #NOTE: You have to include the module it belongs
+    print("DONE")
+
+
+#He was saying, technically all the python files could have an if __name__ == "__main__": statement
+#What it does is it tells the program that "when you're imported to another file, do not execute everything"
+#That way you have one "main function" such as in Java or C++.
